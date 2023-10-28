@@ -1,0 +1,69 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonExpand {
+    transition: width 0.2s ease 0s, height 0.2s ease;
+    width: 300px;
+    height: 100px;
+    background-color: thistle;
+    border-radius: 30px;
+    margin: 5px;
+}
+.buttonExpand:hover {
+    width: 400px;
+    height: 150px;
+    border-radius: 35px;
+    background-color: #b995b9;
+}
+.buttonExpand:active {
+    transition: all 0.2s ease 0s;
+    width: 300px;
+    height: 100px;
+    border-radius: 35px;
+    background-color: #b995b9;
+}
+.buttonRotate {
+    width: 300px;
+    height: 100px;
+    background-color: darkslategray;
+    border-radius: 5px 20px;
+    margin: 5px;
+}
+.buttonRotate:hover {
+    width: 400px;
+    height: 150px;
+    transform: rotate(90deg);
+    transition: all 0.3s ease 0.1s;
+}
+.buttonRotate:active {
+    width: 400px;
+    height: 150px;
+    transition: all 0.3s ease 0.1s;
+    transform: rotate(180deg);
+}
+.buttonDelayed {
+    transition: all 0.2s ease 0s;
+    width: 300px;
+    height: 100px;
+    border-radius: 35px;
+    background-color: #b995b9;
+}
+.buttonDelayed:hover {
+    transform: rotate(270deg);
+    background-color: blueviolet;
+    transition-property: background-color, font-size, transform, color, margin;
+    transition-duration: 3s;
+    margin: 50px;
+}
+.buttonDelayed:active {
+    transform: rotate(-180deg);
+    background-color: blueviolet;
+    transition-property: background-color, transform, color, height, margin;
+    transition-duration: 3s;
+    height: 300px;
+    margin: 50px;
+}
